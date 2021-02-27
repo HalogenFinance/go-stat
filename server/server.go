@@ -116,7 +116,9 @@ func (s *Server) Healthz(w http.ResponseWriter, r *http.Request) {
 func (s *Server) Serve() {
 	router := mux.NewRouter()
 
+	router.HandleFunc("/", s.Healthz).Methods("GET")
 	router.HandleFunc("/health", s.Healthz).Methods("GET")
+	router.HandleFunc("/healthz", s.Healthz).Methods("GET")
 	router.HandleFunc("/api/v1/stat", s.Stat).Methods("GET")
 	router.HandleFunc("/api/v1/price", s.Price).Methods("GET")
 	router.HandleFunc("/api/v1/syrup", s.Syrup).Methods("GET")
