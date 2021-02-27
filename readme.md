@@ -13,7 +13,7 @@ All price is deduced from chain, the price info may not accurate when liquidity 
 
 ## Database
 Restart docker after reboo.
-`docker run -p 3307:3306 --name stat-mysql -v /opt/sql-datadir:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123123 -d mysql`
+`docker run -p 3307:25060 --name stat-mysql -v /opt/sql-datadir:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=b24d1tz55yvpd49q -d mysql`
 
 ## Endpoints
 
