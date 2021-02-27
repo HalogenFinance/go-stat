@@ -1,7 +1,7 @@
 {
   "statas_db_config": {
-    "dialect": "mysql",
-    "db_path": "root:123123@(127.0.0.1:3307)/statas?charset=utf8&parseTime=True&loc=Local"
+    "dialect": "postgres",
+    "db_path": "statadb:gsivr7huqyk18bcr@app-8467be1f-8d4e-4efb-96df-e85270d5e6d2-do-user-2627224-0.b.db.ondigitalocean.com:25060/statadb?sslmode=require"
   },
   "chain_config": {
     "bsc_start_height": 3800000,
