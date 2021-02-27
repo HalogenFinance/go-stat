@@ -5,6 +5,7 @@
 -  Install golang, require version >= 1.13.
 -  run `make build &&  nohup ./build/pancake-statas --config-path config/config.json &`
 
+
 or simple use `service stat start` or `service stat restart`
 
 ## How it works
