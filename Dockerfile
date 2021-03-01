@@ -11,5 +11,7 @@ COPY . .
 RUN apk add --no-cache $PACKAGES && \
     make build
 
+CMD ls
+
 # Run the app
 CMD ./build/pancake-statas --config-path ./config/config.json
